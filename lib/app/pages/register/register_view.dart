@@ -182,7 +182,7 @@ class _RegisterPageView extends ViewState<RegisterPage, RegisterController> {
                               height: 50.0,
                               alignment: FractionalOffset.center,
                               decoration: new BoxDecoration(
-                                  color: Color.fromRGBO(230, 38, 39, 1.0),
+                                  color: ThemeData().primaryColor,
                                   borderRadius:
                                       new BorderRadius.circular(25.0)),
                               child: new Text("Register",
@@ -212,16 +212,19 @@ class _RegisterPageView extends ViewState<RegisterPage, RegisterController> {
         centerTitle: true,
         title: Text('New User Registration',
             style: TextStyle(
-              color: Colors.white,
+              color: ThemeData().primaryColor,
               fontSize: 20.0,
               fontWeight: FontWeight.w500,
             )),
       );
 
   Widget get background => Positioned.fill(
-        child: Image.asset(
+    child: Container(
+      color: backgroundColor,
+    ),
+       /* child: Image.asset(
           Resources.background,
           fit: BoxFit.cover,
-        ),
+        ),*/
       );
 }

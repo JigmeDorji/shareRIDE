@@ -25,28 +25,28 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "share RIDE",
       theme: ThemeData(
-        brightness: Brightness.dark,
-        primaryColor: Colors.red,
-        accentColor: Colors.redAccent,
-        primarySwatch: Colors.red,
-        fontFamily: 'Poppins',
+//        brightness: Brightness.light,
+//        primaryColor: Colors.blue,
+//        accentColor: Colors.blueAccent,
+//        primarySwatch: Colors.blue,
+//        backgroundColor: Colors.white,
+//        fontFamily: 'Poppins',
         inputDecorationTheme: InputDecorationTheme(
-          contentPadding: const EdgeInsets.all(15.0),
+//          contentPadding: const EdgeInsets.all(15.0),
           border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(25.0),
-              borderSide:
-                  BorderSide(color: Color.fromRGBO(255, 255, 255, 0.4))),
-          disabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(25.0),
-              borderSide:
-                  BorderSide(color: Color.fromRGBO(255, 255, 255, 0.4))),
+            borderRadius: BorderRadius.circular(25.0),
+//              borderSide:BorderSide(color: Colors.blue)
+          ),
+//          disabledBorder: OutlineInputBorder(
+//              borderRadius: BorderRadius.circular(25.0),
+//              borderSide:
+//                  BorderSide(color: Color.fromRGBO(255, 255, 255, 0.4))),
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(25.0),
-              borderSide: BorderSide(color: Color.fromRGBO(230, 38, 39, 0.8))),
-          fillColor: Color.fromRGBO(255, 255, 255, 0.4),
-          filled: true,
-          hintStyle:
-              TextStyle(fontWeight: FontWeight.w300, color: Colors.black),
+              borderSide: BorderSide(color: Colors.red)),
+//          fillColor: Color.fromRGBO(255, 255, 255, 0.4),
+//          filled: true,
+//          hintStyle: TextStyle(fontWeight: FontWeight.w300, color: Colors.grey),
         ),
       ),
       home: SplashPage(),

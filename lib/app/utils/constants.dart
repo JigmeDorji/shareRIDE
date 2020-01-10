@@ -12,6 +12,7 @@ class UIConstants {
   static const double progressBarOpacity = 0.6;
   static const Color progressBarColor = Colors.black;
 }
+ const Color backgroundColor = Colors.white;
 
 class Strings {
   static const String registrationFormIncomplete = 'Form must be filled out.';
@@ -49,6 +50,7 @@ SnackBar _getGenericSnackbar(String text, bool isError) {
     ),
   );
 }
+
 
 /// Shows a generic [Snackbar]
 void showGenericSnackbar(GlobalKey<ScaffoldState> key, String text,

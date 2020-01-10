@@ -30,6 +30,7 @@ class LoginPageView extends ViewState<LoginPage, LoginController> {
       : _emailFocus = FocusNode(),
         _passFocus = FocusNode(), super(controller);
 
+
   @override
   Widget build(BuildContext context) {
     // ModalProgressHUD wraps the entire body with a loading using the controller.isLoading
@@ -67,7 +68,7 @@ class LoginPageView extends ViewState<LoginPage, LoginController> {
                         Text(
                           UIConstants.appName,
                           style: TextStyle(
-                            color: Color.fromRGBO(230, 38, 39, 1.0),
+                            color: ThemeData().primaryColor,
                             fontSize: 32.0,
                             fontWeight: FontWeight.w300,
                             letterSpacing: 2.0,
@@ -113,10 +114,13 @@ class LoginPageView extends ViewState<LoginPage, LoginController> {
         left: 0.0,
         right: 0.0,
         height: MediaQuery.of(context).size.height,
-        child: Image.asset(
+        child: Container(
+          color: backgroundColor,
+        ),
+        /*child: Image.asset(
           Resources.background,
           fit: BoxFit.cover,
-        ),
+        )*/
       );
 
   // Fields and Buttons
@@ -157,7 +161,7 @@ class LoginPageView extends ViewState<LoginPage, LoginController> {
           height: 50.0,
           alignment: FractionalOffset.center,
           decoration: BoxDecoration(
-              color: Color.fromRGBO(230, 38, 39, 1.0),
+              color: ThemeData().primaryColor,
               borderRadius: BorderRadius.circular(25.0)),
           child: Text(loginButtonText,
               style: TextStyle(
@@ -173,8 +177,8 @@ class LoginPageView extends ViewState<LoginPage, LoginController> {
         child: Text(
           registerButtonText,
           style: TextStyle(
-            color: Color.fromRGBO(230, 38, 39, 0.8),
-            fontSize: 14.0,
+            color: ThemeData().primaryColor,
+            fontSize: 17.0,
           ),
         ),
       );

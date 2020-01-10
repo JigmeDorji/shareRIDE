@@ -35,6 +35,7 @@ class InputField extends StatelessWidget {
                 borderRadius: BorderRadius.circular(25.0),
                 borderSide:
                     BorderSide(color: Color.fromRGBO(230, 38, 39, 0.8))),
+//            fillColor: Color.fromRGBO(255, 255, 255, 0.4),
             fillColor: Color.fromRGBO(255, 255, 255, 0.4),
             filled: true,
             hintText: _hintText,
